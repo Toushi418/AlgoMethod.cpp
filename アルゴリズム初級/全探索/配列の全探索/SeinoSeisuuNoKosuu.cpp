@@ -1,19 +1,17 @@
-
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int N, V;
-    cin >> N >> V;
-
+    int N;
+    cin >> N;
     int count = 0;
     for (int i = 0; i < N; i++){
         int A;
         cin >> A;
-
-        if (V == A){
+        if (A > 0){
             count++;
         }
     }
-    cout << count << endl;
+
+    cout << count++ << endl;
 }
